@@ -4,23 +4,23 @@ import random
 
 def exitscreen(*_):
     raise urwid.ExitMainLoop()
-    
+
 sysinfo = " {} {} ".format(platform.system(), platform.release())
-errornum1 = "{:02x}".format(random.randint(0, 17))
-errornum2 = "{:04x}".format(random.randint(0, 4095))
-errornum3 = "{:08x}".format(random.randint(0, 68719476736))
+errornum1 = "{:02x}".format(random.randint(0, 17)).upper()
+errornum2 = "{:04x}".format(random.randint(0, 4095)).upper()
+errornum3 = "{:08x}".format(random.randint(0, 68719476736)).upper()
 message = """
 An error has occurred. To continue:
 
 Press Enter to return to {}, or
 
-Press CTRL+ALT+DEL to restart your computer. If you do this, 
+Press CTRL+ALT+DEL to restart your computer. If you do this,
 you will lose any unsaved information in all open applications.
 
 Error: {} : {} : {}
 """.format(platform.system(), errornum1, errornum2, errornum3)
 end = "Press any key to continue "
-    
+
 palette = [
     ('title', '', '', '', '#00a', '#aaa'),
     ('text', '', '', '', '#fff', '#00a'),
