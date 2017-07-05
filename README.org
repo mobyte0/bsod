@@ -1,0 +1,9 @@
+* bsod
+the best feature from window$™© that was missing now comes to our terminals
+
+** todo
++ some custom arguments
+  + accept custom os names
+  + accept error names
+  + xp bsod
++ rsod
