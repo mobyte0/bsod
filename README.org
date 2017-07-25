@@ -1,6 +1,8 @@
 * bsod
 the best feature from window$™© that was missing now comes to our terminals
 
+[[https://asciinema.org/a/130585][https://asciinema.org/a/130585.png]]
+
 ** todo
 + some custom arguments
   + accept custom os names
